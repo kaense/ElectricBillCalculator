@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>256496164081-7l816v88q1ve3f38tm4dk1okngdq8mou.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.256496164081-7l816v88q1ve3f38tm4dk1okngdq8mou</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBkTKjxcnZFFqJ-94TuhqeWPBLrVJjz32o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>256496164081</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tanaka.ElectricBillCalculator</string>
+	<key>PROJECT_ID</key>
+	<string>electricbillcalculator-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>electricbillcalculator-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:256496164081:ios:bafeac4267806a84</string>
+	<key>DATABASE_URL</key>
+	<string>https://electricbillcalculator-ios.firebaseio.com</string>
+</dict>
+</plist>

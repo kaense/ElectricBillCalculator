@@ -13,6 +13,10 @@
 		9387A052215DCEB0006F560F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9387A051215DCEB0006F560F /* Assets.xcassets */; };
 		9387A055215DCEB0006F560F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9387A053215DCEB0006F560F /* LaunchScreen.storyboard */; };
 		9387A060215DCEB0006F560F /* ElectricBillCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387A05F215DCEB0006F560F /* ElectricBillCalculatorTests.swift */; };
+		93F25F7B2160EC6400038A6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93F25F7A2160EC6400038A6C /* GoogleService-Info.plist */; };
+		93F25F7D2162016400038A6C /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 93F25F7C2162016400038A6C /* AppIcon.appiconset */; };
+		ACFCB41661753D9B7DCF4ED0 /* Pods_ElectricBillCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A542F469E89252D016ACBE /* Pods_ElectricBillCalculatorTests.framework */; };
+		B71817C0EDA635C8D2EBA9C5 /* Pods_ElectricBillCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9B3ED12FFECF9C3CAEF49F /* Pods_ElectricBillCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D5CC2F199F14C49F0920C6 /* Pods-ElectricBillCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectricBillCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElectricBillCalculator/Pods-ElectricBillCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		239A6F642DE608A1DAACBF5E /* Pods-ElectricBillCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectricBillCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElectricBillCalculator/Pods-ElectricBillCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		35F95C50BE17A397FF01C923 /* Pods-ElectricBillCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectricBillCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElectricBillCalculatorTests/Pods-ElectricBillCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C9B3ED12FFECF9C3CAEF49F /* Pods_ElectricBillCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectricBillCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A542F469E89252D016ACBE /* Pods_ElectricBillCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectricBillCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9387A047215DCEAD006F560F /* ElectricBillCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectricBillCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9387A04A215DCEAD006F560F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9387A04C215DCEAD006F560F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,9 @@
 		9387A05B215DCEB0006F560F /* ElectricBillCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectricBillCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9387A05F215DCEB0006F560F /* ElectricBillCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricBillCalculatorTests.swift; sourceTree = "<group>"; };
 		9387A061215DCEB0006F560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F25F7A2160EC6400038A6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93F25F7C2162016400038A6C /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		C678B6E93800197C624E4643 /* Pods-ElectricBillCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectricBillCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElectricBillCalculatorTests/Pods-ElectricBillCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71817C0EDA635C8D2EBA9C5 /* Pods_ElectricBillCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFCB41661753D9B7DCF4ED0 /* Pods_ElectricBillCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +76,8 @@
 				9387A049215DCEAD006F560F /* ElectricBillCalculator */,
 				9387A05E215DCEB0006F560F /* ElectricBillCalculatorTests */,
 				9387A048215DCEAD006F560F /* Products */,
+				BB70FB69DE8B1065BFC4E3DB /* Pods */,
+				C77CA88AFD60D6E9ABA24F9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,8 @@
 				9387A051215DCEB0006F560F /* Assets.xcassets */,
 				9387A053215DCEB0006F560F /* LaunchScreen.storyboard */,
 				9387A056215DCEB0006F560F /* Info.plist */,
+				93F25F7A2160EC6400038A6C /* GoogleService-Info.plist */,
+				93F25F7C2162016400038A6C /* AppIcon.appiconset */,
 			);
 			path = ElectricBillCalculator;
 			sourceTree = "<group>";
@@ -96,6 +114,26 @@
 			path = ElectricBillCalculatorTests;
 			sourceTree = "<group>";
 		};
+		BB70FB69DE8B1065BFC4E3DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				239A6F642DE608A1DAACBF5E /* Pods-ElectricBillCalculator.debug.xcconfig */,
+				10D5CC2F199F14C49F0920C6 /* Pods-ElectricBillCalculator.release.xcconfig */,
+				C678B6E93800197C624E4643 /* Pods-ElectricBillCalculatorTests.debug.xcconfig */,
+				35F95C50BE17A397FF01C923 /* Pods-ElectricBillCalculatorTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C77CA88AFD60D6E9ABA24F9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9B3ED12FFECF9C3CAEF49F /* Pods_ElectricBillCalculator.framework */,
+				89A542F469E89252D016ACBE /* Pods_ElectricBillCalculatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9387A064215DCEB0006F560F /* Build configuration list for PBXNativeTarget "ElectricBillCalculator" */;
 			buildPhases = (
+				B20A85303EFFAAE86F3521A9 /* [CP] Check Pods Manifest.lock */,
 				9387A043215DCEAD006F560F /* Sources */,
 				9387A044215DCEAD006F560F /* Frameworks */,
 				9387A045215DCEAD006F560F /* Resources */,
+				21EA2E395AD52CBFBB324A54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9387A067215DCEB0006F560F /* Build configuration list for PBXNativeTarget "ElectricBillCalculatorTests" */;
 			buildPhases = (
+				E1BD931AB62A6414946B77BF /* [CP] Check Pods Manifest.lock */,
 				9387A057215DCEB0006F560F /* Sources */,
 				9387A058215DCEB0006F560F /* Frameworks */,
 				9387A059215DCEB0006F560F /* Resources */,
@@ -178,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9387A055215DCEB0006F560F /* LaunchScreen.storyboard in Resources */,
+				93F25F7B2160EC6400038A6C /* GoogleService-Info.plist in Resources */,
 				9387A052215DCEB0006F560F /* Assets.xcassets in Resources */,
+				93F25F7D2162016400038A6C /* AppIcon.appiconset in Resources */,
 				9387A050215DCEAD006F560F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +234,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21EA2E395AD52CBFBB324A54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ElectricBillCalculator/Pods-ElectricBillCalculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElectricBillCalculator/Pods-ElectricBillCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B20A85303EFFAAE86F3521A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElectricBillCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1BD931AB62A6414946B77BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElectricBillCalculatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9387A043215DCEAD006F560F /* Sources */ = {
@@ -358,9 +460,11 @@
 		};
 		9387A065215DCEB0006F560F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239A6F642DE608A1DAACBF5E /* Pods-ElectricBillCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAF87342VZ;
 				INFOPLIST_FILE = ElectricBillCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,9 +479,11 @@
 		};
 		9387A066215DCEB0006F560F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D5CC2F199F14C49F0920C6 /* Pods-ElectricBillCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAF87342VZ;
 				INFOPLIST_FILE = ElectricBillCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +498,7 @@
 		};
 		9387A068215DCEB0006F560F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C678B6E93800197C624E4643 /* Pods-ElectricBillCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +519,7 @@
 		};
 		9387A069215DCEB0006F560F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F95C50BE17A397FF01C923 /* Pods-ElectricBillCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
