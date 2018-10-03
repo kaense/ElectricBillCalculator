@@ -11,7 +11,7 @@ import GoogleMobileAds
 
 class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegate {
     
-    let AdMobTest:Bool = false
+    let AdMobTest:Bool = true
     
     @IBOutlet var subBannerView: UIView!
     var bannerView: GADBannerView!
@@ -57,6 +57,9 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
         self.minutes.keyboardType = UIKeyboardType.numberPad
         self.days.keyboardType = UIKeyboardType.numberPad
         self.unitPrice.keyboardType = UIKeyboardType.decimalPad
+ 
+
+
         
         powerConsumption.delegate = self
         hours.delegate = self
