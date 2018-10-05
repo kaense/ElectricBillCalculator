@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
     @IBOutlet var scrollView: UIScrollView!
     // 現在選択されているTextField
     var selectedTextField:UITextField?
-    let AdMobTest:Bool = true
+    let AdMobTest:Bool = false
     
     
     
@@ -22,12 +22,50 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
     var bannerView: GADBannerView!
     
     @IBOutlet var sum: UILabel!
-    @IBOutlet var powerConsumption: UITextField!
-    @IBOutlet var unitPrice: UITextField!
-    @IBOutlet var hours: UITextField!
-    @IBOutlet var minutes: UITextField!
-    @IBOutlet var days: UITextField!
+    @IBOutlet var powerConsumption: UITextField!{
+        didSet {
+            powerConsumption?.addDoneCancelToolbar(onDone: (target: self, action: #selector(doneButtonTappedForPowerConsumption)))
+        }
+    }
+    @IBOutlet var unitPrice: UITextField!{
+        didSet {
+            unitPrice?.addDoneCancelToolbar(onDone: (target: self, action: #selector(doneButtonTappedForUnitPrice)))
+        }
+    }
+    @IBOutlet var hours: UITextField!{
+        didSet {
+            hours?.addDoneCancelToolbar(onDone: (target: self, action: #selector(doneButtonTappedForHours)))
+        }
+    }
+    @IBOutlet var minutes: UITextField!{
+        didSet {
+            minutes?.addDoneCancelToolbar(onDone: (target: self, action: #selector(doneButtonTappedForMinutes)))
+        }
+    }
+    @IBOutlet var days: UITextField!{
+        didSet {
+            days?.addDoneCancelToolbar(onDone: (target: self, action: #selector(doneButtonTappedForDays)))
+        }
+    }
     @IBOutlet var unitPriceData: UILabel!
+    
+    @objc func doneButtonTappedForUnitPrice() {
+        unitPrice.resignFirstResponder()
+    }
+    @objc func doneButtonTappedForPowerConsumption() {
+        powerConsumption.resignFirstResponder()
+    }
+    @objc func doneButtonTappedForHours() {
+        hours.resignFirstResponder()
+    }
+    @objc func doneButtonTappedForMinutes() {
+        minutes.resignFirstResponder()
+    }
+    @objc func doneButtonTappedForDays() {
+        days.resignFirstResponder()
+    }
+    
+
     // UserDefaults のインスタンス
     let userDefaults = UserDefaults.standard
     
@@ -265,4 +303,26 @@ extension ViewController{
         self.scrollView.contentInset = UIEdgeInsets.zero
         self.scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
     }
+}
+
+extension UITextField {
+    func addDoneCancelToolbar(onDone: (target: Any, action: Selector)? = nil, onCancel: (target: Any, action: Selector)? = nil) {
+        let onCancel = onCancel ?? (target: self, action: #selector(cancelButtonTapped))
+        let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
+        
+        let toolbar: UIToolbar = UIToolbar()
+        toolbar.barStyle = .default
+        toolbar.items = [
+            UIBarButtonItem(title: "Cancel", style: .plain, target: onCancel.target, action: onCancel.action),
+            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
+            UIBarButtonItem(title: "Done", style: .done, target: onDone.target, action: onDone.action)
+        ]
+        toolbar.sizeToFit()
+        
+        self.inputAccessoryView = toolbar
+    }
+    
+    // Default actions:
+    @objc func doneButtonTapped() { self.resignFirstResponder() }
+    @objc func cancelButtonTapped() { self.resignFirstResponder() }
 }
