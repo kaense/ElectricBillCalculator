@@ -155,6 +155,7 @@
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="TZs-Fg-K7V" secondAttribute="trailing" constant="16" id="01j-fd-jvk"/>
                                             <constraint firstItem="7Zd-oN-JT3" firstAttribute="top" secondItem="E2v-i3-6R6" secondAttribute="bottom" constant="25" id="0Pj-xJ-abw"/>

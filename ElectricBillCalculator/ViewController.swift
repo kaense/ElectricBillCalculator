@@ -14,9 +14,8 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
     @IBOutlet var scrollView: UIScrollView!
     // 現在選択されているTextField
     var selectedTextField:UITextField?
+    
     let AdMobTest:Bool = false
-    
-    
     
     @IBOutlet var subBannerView: UIView!
     var bannerView: GADBannerView!
@@ -86,6 +85,7 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+
         // キーボードイベントの監視解除
         NotificationCenter.default.removeObserver(self,
                                                   name: UIResponder.keyboardWillShowNotification,
@@ -95,8 +95,20 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
                                                   object: nil)
     }
     
+    // キーボード以外をタップするとキーボードが下がるメソッド
+    @objc func hideKyeoboardTap(recognizer : UITapGestureRecognizer){
+        self.view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //tapされた時の動作を宣言する: 一度タップされたらキーボードを隠す
+        let hideTap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKyeoboardTap))
+        hideTap.numberOfTapsRequired = 1
+        self.view.isUserInteractionEnabled = true
+        self.view.addGestureRecognizer(hideTap)
+
     
         self.textFieldInit() // TextFieldのセットアップ
         
@@ -214,8 +226,17 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        /*powerConsumption.resignFirstResponder()
+        unitPrice.resignFirstResponder()
+        days.resignFirstResponder()
+        hours.resignFirstResponder()
+        minutes.resignFirstResponder()
+        */
+        print("a")
         self.view.endEditing(true)
-    }
+    }    
+
+    
     
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
@@ -245,6 +266,7 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
 }
 
 extension ViewController{
+    
     func textFieldInit() {
         // 最初に選択されているTextFieldをセット
         self.selectedTextField = self.powerConsumption
@@ -307,22 +329,21 @@ extension ViewController{
 
 extension UITextField {
     func addDoneCancelToolbar(onDone: (target: Any, action: Selector)? = nil, onCancel: (target: Any, action: Selector)? = nil) {
-        let onCancel = onCancel ?? (target: self, action: #selector(cancelButtonTapped))
+        //let onCancel = onCancel ?? (target: self, action: #selector(cancelButtonTapped))
         let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
         
         let toolbar: UIToolbar = UIToolbar()
         toolbar.barStyle = .default
         toolbar.items = [
-            UIBarButtonItem(title: "Cancel", style: .plain, target: onCancel.target, action: onCancel.action),
+            //UIBarButtonItem(title: "Cancel", style: .plain, target: onCancel.target, action: onCancel.action),
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil),
             UIBarButtonItem(title: "Done", style: .done, target: onDone.target, action: onDone.action)
         ]
         toolbar.sizeToFit()
-        
         self.inputAccessoryView = toolbar
     }
     
     // Default actions:
     @objc func doneButtonTapped() { self.resignFirstResponder() }
-    @objc func cancelButtonTapped() { self.resignFirstResponder() }
+    //@objc func cancelButtonTapped() { self.resignFirstResponder() }
 }
