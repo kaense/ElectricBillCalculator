@@ -213,8 +213,14 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
             if ((resultUnitPrice! > 100000) || (resultHours! > 100000) || (resultDays! > 100000) || (resultMinutes! > 100000) || (resultPowerConsumption! > 100000)){
                 sum.text = "--"
             }else{
-                let text:String = String(Int(resultPowerConsumption! * resultDays! * (resultHours! + resultMinutes! / 60) * resultUnitPrice! / 1000))
-                sum.text = text
+                let resultInt = Int(resultPowerConsumption! * resultDays! * (resultHours! + resultMinutes! / 60) * resultUnitPrice! / 1000)
+                let num = NSNumber(value: resultInt)
+                let formatter = NumberFormatter()
+                formatter.numberStyle = NumberFormatter.Style.decimal
+                formatter.groupingSeparator = ","
+                formatter.groupingSize = 3
+                let resultString = formatter.string(from: num)
+                sum.text = resultString
             }
         }
     }
@@ -232,7 +238,6 @@ class ViewController: UIViewController, UITextFieldDelegate,GADBannerViewDelegat
         hours.resignFirstResponder()
         minutes.resignFirstResponder()
         */
-        print("a")
         self.view.endEditing(true)
     }    
 
